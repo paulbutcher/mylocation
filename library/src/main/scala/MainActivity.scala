@@ -8,8 +8,8 @@ class MainActivity extends Activity {
 
   override def onCreate(savedInstanceState: Bundle) {
     super.onCreate(savedInstanceState)
-    setContentView(setContentView(R.layout.main))
+    setContentView(R.layout.main)
     val welcome = findViewById(R.id.welcome).asInstanceOf[TextView]
-    welcome.setText("Hello world: " + getResources.getText(R.id.app_name))
+    welcome.setText("Hello world: " + getResources.getText(R.string.app_name))
   }
 }
