@@ -1,7 +1,7 @@
 import sbt._
 
 trait Defaults {
-  def androidPlatformName = "android-8"
+  def androidPlatformName = "android-9"
 }
 class Parent(info: ProjectInfo) extends ParentProject(info) {
   override def shouldCheckOutputDirectories = false
@@ -13,5 +13,7 @@ class Parent(info: ProjectInfo) extends ParentProject(info) {
 
   class MainProject(info: ProjectInfo) extends AndroidProject(info) with Defaults
 
-  class LibraryProject(info: ProjectInfo) extends AndroidLibraryProject(info) with Defaults
+  class LibraryProject(info: ProjectInfo) extends AndroidLibraryProject(info) with Defaults {
+    println("addOnsPath: "+ addonsPath)
+  }
 }
