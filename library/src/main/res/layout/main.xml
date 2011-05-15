@@ -3,10 +3,9 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-  <com.google.android.maps.MapView android:layout_width="match_parent" 
+  <com.google.android.maps.MapView android:id="@+id/map"
+                                   android:layout_width="match_parent" 
                                    android:layout_height="match_parent"
-                                   android:enabled="true"
-                                   android:clickable="true"
                                    android:apiKey="0fikDkHCG45z-zFSEpW63U0JIFWYq2dPrXRS-Sg"
                                    />
 
